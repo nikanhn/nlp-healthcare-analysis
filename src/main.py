@@ -10,10 +10,10 @@ def main():
     # Load and preprocess data
     df = preprocess_data('data/healthcare_dataset.csv')
 
-    # For this example, let's assume we're predicting 'Test Results' 
-    # from 'Symptoms' and 'Medical Condition'. 
+    # For this example, let's assume we're predicting 'Test Results'
+    # from 'Medical Condition' and 'Medication'.
     # We'll combine these text fields into a single feature.
-    df['text_features'] = df['Symptoms'] + ' ' + df['Medical Condition']
+    df['text_features'] = df['Medical Condition'] + ' ' + df['Medication']
 
     # Split data into training and testing sets
     X_train, X_test, y_train, y_test = train_test_split(
@@ -32,6 +32,12 @@ def main():
         pickle.dump(model, f)
 
     print("Model trained and saved to models/nlp_model.pkl")
+
+    # Evaluate the model
+    from sklearn.metrics import classification_report
+    y_pred = model.predict(X_test)
+    print("\nModel Evaluation:")
+    print(classification_report(y_test, y_pred))
 
 if __name__ == '__main__':
     main()
