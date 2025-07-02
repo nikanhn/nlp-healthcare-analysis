@@ -1,0 +1,12 @@
+# Virtual environment
+venv/
+
+# Data files
+data/
+
+# Model files
+models/
+
+# Python caches
+__pycache__/
+*.pyc
