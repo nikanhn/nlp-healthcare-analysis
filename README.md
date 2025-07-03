@@ -119,4 +119,3 @@ Once both the backend API and the frontend are running, you can interact with th
 
 ![Frontend Screenshot](frontend_screenshot.png)
 
-*(Please replace this placeholder with an actual screenshot of the running frontend application.)*
