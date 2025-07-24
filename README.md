@@ -99,7 +99,6 @@ Once both the backend API and the frontend are running, you can interact with th
 ├── src
 │   ├── __init__.py
 │   ├── main.py
-│   ├── predict.py
 │   └── preprocess.py
 ├── frontend
 │   ├── public
@@ -114,9 +113,3 @@ Once both the backend API and the frontend are running, you can interact with th
 ├── README.md
 └── requirements.txt
 ```
-
-## Screenshot
-
-![Frontend Screenshot](frontend_screenshot.png)
-
-*(Please replace this placeholder with an actual screenshot of the running frontend application.)*
