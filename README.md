@@ -113,3 +113,7 @@ Once both the backend API and the frontend are running, you can interact with th
 ├── README.md
 └── requirements.txt
 ```
+
+## Screenshot
+
+![Frontend Screenshot](frontend_screenshot.png)
